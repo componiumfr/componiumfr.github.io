@@ -1,0 +1,407 @@
+@font-face {
+  font-family: "HoneyScript";
+  src: url("/dist/fonts/HoneyScript-SemiBold.ttf"); }
+@font-face {
+  font-family: "young";
+  src: url("/dist/fonts/Young.ttf"); }
+body, html {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+.image img {
+  width: 100%; }
+
+/* couleur site */
+/* @Mixins */
+/** Texte 
+----------------------------------------------------- **/
+.F1 {
+  font-family: 'HoneyScript', sans-serif; }
+
+.F2 {
+  font-family: 'young', sans-serif; }
+
+.T-l {
+  color: #ffffff;
+  text-align: left;
+  text-decoration: none; }
+
+.T-r {
+  color: #ffffff;
+  text-align: right;
+  text-decoration: none; }
+
+.T-c {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none; }
+
+.green-line {
+  text-decoration: underline 2px;
+  text-underline-offset: 15px;
+  text-decoration-color: #34FFC8;
+  text-decoration-thickness: 4px; }
+
+/** Alignement container 
+----------------------------------------------------- **/
+.eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+
+/** Couleurs site 
+----------------------------------------------------- **/
+.vert {
+  background-color: #34FFC8; }
+
+.white {
+  background-color: #ffffff; }
+
+.blueblack {
+  background-color: #242424; }
+
+.black {
+  background-color: #000000; }
+
+.greenblack {
+  background-color: #08221d; }
+
+/* ** === Navbar  === ** */
+.bg-dark {
+  background-color: #2b2b2bf2 !important; }
+
+navbar-dark .navbar-nav {
+  /* z-index should be above .close-navbar-toggler */
+  z-index: 2;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+
+ol, ul {
+  text-align: center; }
+
+.close-navbar-toggler {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer; }
+
+.close-navbar-toggler.collapsed {
+  z-index: -1; }
+
+/** Couleurs des liens par default & au survol
+---------------------------------------------------------- **/
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: underline 2px;
+  text-underline-offset: 10px;
+  text-decoration-color: #34FFC8;
+  margin-left: 3px; }
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #34FFC8; }
+
+/** icone et hover
+---------------------------------------------------------- **/
+.icone img {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  list-style: none;
+  display: inline-block;
+  margin-top: 10px; }
+
+.align-text-top:hover {
+  opacity: 0.4; }
+
+/* ** === Home  === ** */
+#Home .bg_parallax_1 {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 250px;
+  background-color: #000000;
+  background-image: url(/img/background/background-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 250px; }
+#Home .logo_bg {
+  margin: auto;
+  display: block;
+  position: center; }
+#Home h3 {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+/* ** === Biographie  === ** */
+#Biographie .bloc_bio {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  background-color: #151515; }
+  #Biographie .bloc_bio .bio {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    background-color: #000000; }
+#Biographie #Nous {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #2f2f2f; }
+  #Biographie #Nous h1 {
+    color: #ffffff;
+    text-align: center; }
+#Biographie .position_text {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  justify-content: center !important; }
+#Biographie .bloc_info .info h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+#Biographie .bloc_info .info p {
+  color: #ffffff;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/* ** === Discographie  === ** */
+#Discographie {
+  background-color: #000000;
+  padding-top: 100px;
+  padding-bottom: 100px; 
+}
+  #Discographie .bloc_disco {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    #Discographie .bloc_disco h1 {
+      margin-top: 40px;
+      margin-bottom: 10px; }
+  #Discographie .bloc-music {
+    padding-top: 2px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #2fa283;
+    background: linear-gradient(45deg, #2fa283 50%, #252525 50%);
+    background: -webkit-linear-gradient(45deg, #2fa283 50%, #252525 50%);
+    background: -moz-linear-gradient(45deg, #2fa283 50%, #252525 50%); }
+    #Discographie .bloc-music .subtitle {
+      font-family: 'HoneyScript', sans-serif;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    #Discographie .bloc-music .image {
+      width: 500px;
+      height: auto;
+      margin: auto;
+      -webkit-box-shadow: -30px -30px 5px 0px rgba(255, 255, 255, 0), -2px 1px 7px 1px #BCBCBC;
+      -moz-box-shadow: -30px -30px 5px 0px rgba(255, 255, 255, 0), -2px 1px 7px 1px #BCBCBC;
+      box-shadow: -30px -30px 5px 0px rgba(255, 255, 255, 0), -2px 1px 7px 1px #BCBCBC; }
+    #Discographie .bloc-music .bloc_chanson {
+      padding-bottom: 40px; }
+      #Discographie .bloc-music .bloc_chanson .titre_chanson a {
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+      #Discographie .bloc-music .bloc_chanson .titre_chanson a:hover {
+        color: #34FFC8; }
+  #Discographie .bloc_icone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #191919; }
+    #Discographie .bloc_icone .icone img {
+      width: 10px;
+      height: auto;
+      margin: auto;
+      list-style: none;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  @media (max-width: 576px) {
+    #Discographie .bloc_disco {
+      padding-top: 0px;
+      padding-bottom: 5px; } }
+
+/* ** === Evenements  === ** */
+#Evenements {
+  background-color: #2f2f2f; }
+  #Evenements .bloc_title {
+    padding-top: 50px;
+    padding-bottom: 10px; }
+  #Evenements .title h3 {
+    margin-top: 80px;
+    margin-bottom: 20px; }
+  #Evenements .title p {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  #Evenements .bloc_date {
+    padding-top: 10px;
+    padding-bottom: 50px; }
+    #Evenements .bloc_date .date .T-r {
+      color: #34FFC8; }
+    #Evenements .bloc_date .date .size {
+      font-size: 40px; }
+    @media (max-width: 576px) {
+      #Evenements .bloc_date .date .size {
+        font-size: 25px; } }
+
+/* ** === Galerie  === ** */
+#Galerie {
+  background-color: #000000;
+  /* media queries affichage section galerie xs */ }
+  #Galerie .bloc_title {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  #Galerie .title h3 {
+    margin-top: 70px;
+    margin-bottom: 20px; }
+  #Galerie .title p {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  #Galerie .bloc_photo {
+    padding-bottom: 150px; }
+  @media (max-width: 576px) {
+    #Galerie .scroll-min {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+
+/* ** === Contact  === ** */
+#Contact .bg_parallax_3 {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+  background-color: #000000;
+  background-image: url(/img/background/background-02.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 100px; }
+#Contact .bloc_form {
+  margin-top: 50px; }
+#Contact .form-control {
+  background-color: #4344446b;
+  color: #ffffff; }
+#Contact .form-control::placeholder {
+  color: #ffffff;
+  font-weight: bold;
+  opacity: 1;
+  font-family: lato;
+  font-size: 20px; }
+
+/* ** === footer  === ** */
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000000; }
+  footer .logo {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  footer .logo img:hover {
+    opacity: 0.4; }
+  footer .bloc_mention {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  @media (max-width: 576px) {
+    footer .bloc_logo {
+      display: flex;
+      width: 100%;
+      margin: auto; }
+    footer img, footer svg {
+      padding-bottom: 10px; } }
+
+/* Debug */
+.red {
+  background-color: red; }
+
+.green {
+  background-color: greenyellow; }
+
+.pink {
+  background-color: palevioletred; }
+
+.blue {
+  background-color: #269abc; }
+
+.purple {
+  background-color: #8a39ff; }
+
+.orange {
+  background-color: orange; }
+
+.grey {
+  background-color: #D3D3D3; }
+
+.yellow {
+  background-color: yellow; }
+
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #333;
+}
+
+h4.neonText {
+  font-size: 30px;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 65%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55%, 59% {        
+      text-shadow: none;
+  }    
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+}
+
+.platformLogo {
+  width: 50px;
+  text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+}
+
+/*# sourceMappingURL=comp.css.map */
